@@ -1,14 +1,15 @@
 //Write a program to check the entered string is palindrome or not
 #include<stdio.h>
 #include<stdbool.h> 
+#include<string.h>
 int main()
 {
-    char str;
-    int len;
-    bool pal = False;
+    char str[50];
+    int len, i;
+    bool pal = false;
     
     printf("Enter a string: ");
-    scanf("%d%,&str);
+    scanf("%c",&str);
     
     len = strlen(str);
     
@@ -16,11 +17,11 @@ int main()
     {
         if(str[i]!= str[len-i-1])
         {
-            pal = True;
+            pal = true;
         }
         break;
     }
-    if(pal==True)
+    if(pal==true)
     {
         printf("Entered string is a palindrome");
     }
