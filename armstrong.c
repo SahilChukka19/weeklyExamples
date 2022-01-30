@@ -9,12 +9,12 @@ int main()
     scanf("%d", &num);
     t=num;
     
-    while(n>0)
+    while(num>0)
     {
         rem = n%10;
         cub = rem*rem*rem;
         sum = sum+cub;
-        n = n/10;
+        num = num/10;
     }
     num=t;
     
